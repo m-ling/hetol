@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .big{
+    width: 50px;
+    height: 100px;
+    background: rgb(194, 9, 9);
+    transition: 1s;
+    margin: auto;
+    overflow: hidden;
+  }
+  .small1{
+    width: 100%;
+    height: 50px;
+    background: rgb(175, 187, 6);
+    transition: 1s;
+    float: left;
+  }
+  .small2{
+    width: 50px;
+    height: 50px;
+    background: rgb(6, 33, 187);
+    transition: 1s;
+    transform: translateX(100%);
+  }
+  .big:hover .small1{
+    transform: translateX(-100%);
+  }
+  .big:hover .small2{
+    transform: translateX(0);
+  }
+
+  </style>
+</head>
+<body>
+  <div class="big">
+    <div class="small1"></div>
+    <div class="small2"></div>
+  </div>
+</body>
+</html>
