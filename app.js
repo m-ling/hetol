@@ -17,7 +17,7 @@ var server=express();
 // cors跨域
 server.use(cors({
   //允许程序列表
-  origin:["http://127.0.0.1:8080","http://localhost:8080"],
+  origin:["http://127.0.0.1:8081","http://localhost:8081"],
   credentials:true//每次请求需要验证
 }))
 //5.配置session模块
@@ -45,6 +45,8 @@ server.get('/main',(req,res)=>{
     }
   })
 })
+
+
 
 // 登录
 server.get("/login",(req,res)=>{
